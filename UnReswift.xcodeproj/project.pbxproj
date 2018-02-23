@@ -52,6 +52,7 @@
 		DF7991022040C37C00E4B0C8 = {
 			isa = PBXGroup;
 			children = (
+				DF79916F2040C93500E4B0C8 /* README.md */,
 				DF79910E2040C37D00E4B0C8 /* UnReswift */,
 				DF79910D2040C37D00E4B0C8 /* Products */,
 			);
@@ -91,7 +92,6 @@
 		DF79912D2040C4E300E4B0C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DF79916F2040C93500E4B0C8 /* README.md */,
 				DF79910F2040C37D00E4B0C8 /* UnReswift.h */,
 				DF7991102040C37D00E4B0C8 /* Info.plist */,
 			);

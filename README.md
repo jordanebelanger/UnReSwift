@@ -1,64 +1,53 @@
-# WARNING
-
-Thank you for using UnReswift. Before you release your awesome project to the world, complete the following steps.
-
-THIS LIST IS EASY, CHECK IT OFF ONE-BY-ONE BABY!
-
- - [ ] Open the project in Xcode and add features to UnReswift
- - [ ] Make sure you are using Swift 3 ("Convert to latest Swift syntax")
- - [ ] Fix all build errors and warnings, add tests (yes really)
- - [ ] Add a screenshot or AT LEAST some picture, and fill in this readme
- - [ ] Add all details to your [Podspec](UnReswift.podspec)
- - [ ] Delete all this crap up here
- - [ ] Make one release (full steps are in [CONTRIBUTING.md] in case you forget)
-
-THEN YOU'RE DONE, GO STAR [swift3-module-template](https://github.com/fulldecent/swift3-module-template) FOR UPDATES.
-
-----
-
 # UnReswift
 
-[![CI Status](http://img.shields.io/travis/jordanebelanger/UnReswift.svg?style=flat)](https://travis-ci.org/jordanebelanger/UnReswift)
-[![Version](https://img.shields.io/cocoapods/v/UnReswift.svg?style=flat)](https://cocoapods.org/pods/UnReswift)
-[![License](https://img.shields.io/cocoapods/l/UnReswift.svg?style=flat)](https://cocoapods.org/pods/UnReswift)
-[![Platform](https://img.shields.io/cocoapods/p/UnReswift.svg?style=flat)](https://cocoapods.org/pods/UnReswift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-<a href="https://placehold.it/400?text=Screen+shot"><img width=200 height=200 src="https://placehold.it/400?text=Screen+shot" alt="Screenshot" /></a>
+Redux style reducers, as are used in the ReSwift library and others, are a mostly useless artifact emanating from Javascript's lack of static typing. Programming elements consisting of a large switch statement applied to a bunch of constant strings are not necessary in a static language like Swift. From my experience, Reducers look and sound cool in theory, they have that Functional Programming buzz around them, but in practice it's usually just an additional element of indirection cluttering your project.
 
+While keeping the familiar Store/Dispatch based interface, UnReswift removes reducers altogether and move the act of reducing your `Store`'s state to the `Action`s themselves.
 
-## Example
+The `Action` Protocol is very simple:
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```
+public protocol Action: AnyAction {
+    associatedtype ActionStateType: StateType
 
+    func reduce(_ state: ActionStateType) -> ActionStateType
+}
+```
 
-## Requirements
+Notice the `reduce` function requirement. Traditionally, the store state modification routine happens inside a switch case of one of your reducers. In UnReswift, that routine is the `reduce` function of an `Action` itself.
+
+Here is an example applied to the common counter problem:
+
+```
+struct AppState: StateType {
+    var counter: Int = 0
+}
+
+struct CounterActionIncrease: Action {
+    typealias ActionStateType = AppState
+
+    func reduce(_ state: AppState) -> AppState {
+        var state = state
+        state.counter += 1
+        return state
+    }
+}
+
+let store = Store(state: AppState())
+
+store.dispatch(CounterActionIncrease())
+```
+
+Very simple and hopefully familiar for most people with a Redux/ReSwift background.
 
 
 ## Installation
 
 ### CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
-To integrate UnReswift into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-use_frameworks!
-
-pod 'UnReswift'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
-
+Currently not supported.
 
 ### Carthage
 
@@ -74,10 +63,8 @@ $ brew install carthage
 To integrate UnReswift into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "jordanebelanger/UnReswift" ~> 1.0
+github "jordanebelanger/UnReswift"
 ```
-
-Run `carthage update` to build the framework and drag the built `UnReswift`.framework into your Xcode project.
 
 
 ## Author

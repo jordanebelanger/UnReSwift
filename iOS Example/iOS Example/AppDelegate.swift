@@ -9,6 +9,22 @@
 import UIKit
 import UnReswift
 
+struct AppState: StateType {
+    var counter: Int = 0
+}
+
+struct CounterActionIncrease: Action {
+    typealias ActionStateType = AppState
+    
+    func reduce(_ state: AppState) -> AppState {
+        var state = state
+        state.counter += 1
+        return state
+    }
+}
+
+let store = Store(state: AppState())
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,7 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        print("Store state currently is: \(store.state)")
+        print("Dispatching the Counter Increase action")
+        store.dispatch(CounterActionIncrease())
+        print("Store state is now: \(store.state)")
         return true
     }
 
