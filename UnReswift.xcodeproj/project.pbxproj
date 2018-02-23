@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		DF7991112040C37D00E4B0C8 /* UnReswift.h in Headers */ = {isa = PBXBuildFile; fileRef = DF79910F2040C37D00E4B0C8 /* UnReswift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF7991382040C4FB00E4B0C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79912E2040C4FA00E4B0C8 /* Task.swift */; };
-		DF7991392040C4FB00E4B0C8 /* SyncMainSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79912F2040C4FA00E4B0C8 /* SyncMainSafe.swift */; };
-		DF79913A2040C4FB00E4B0C8 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991302040C4FA00E4B0C8 /* Lock.swift */; };
 		DF79913B2040C4FB00E4B0C8 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991312040C4FA00E4B0C8 /* Action.swift */; };
 		DF79913C2040C4FB00E4B0C8 /* StateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991322040C4FA00E4B0C8 /* StateType.swift */; };
-		DF79913D2040C4FB00E4B0C8 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991332040C4FA00E4B0C8 /* Weak.swift */; };
 		DF79913E2040C4FB00E4B0C8 /* StoreSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991342040C4FA00E4B0C8 /* StoreSubscriber.swift */; };
 		DF79913F2040C4FB00E4B0C8 /* TaskRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991352040C4FA00E4B0C8 /* TaskRunner.swift */; };
 		DF7991402040C4FB00E4B0C8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991362040C4FA00E4B0C8 /* Store.swift */; };
-		DF7991412040C4FB00E4B0C8 /* Async+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991372040C4FA00E4B0C8 /* Async+Optional.swift */; };
 		DF7991702040C93500E4B0C8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF79916F2040C93500E4B0C8 /* README.md */; };
+		DF7991762040CA6500E4B0C8 /* SyncMainSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991722040CA6500E4B0C8 /* SyncMainSafe.swift */; };
+		DF7991772040CA6500E4B0C8 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991732040CA6500E4B0C8 /* Lock.swift */; };
+		DF7991782040CA6500E4B0C8 /* Async+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991742040CA6500E4B0C8 /* Async+Optional.swift */; };
+		DF7991792040CA6500E4B0C8 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7991752040CA6500E4B0C8 /* Weak.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +26,16 @@
 		DF79910F2040C37D00E4B0C8 /* UnReswift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnReswift.h; sourceTree = "<group>"; };
 		DF7991102040C37D00E4B0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF79912E2040C4FA00E4B0C8 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		DF79912F2040C4FA00E4B0C8 /* SyncMainSafe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncMainSafe.swift; sourceTree = "<group>"; };
-		DF7991302040C4FA00E4B0C8 /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 		DF7991312040C4FA00E4B0C8 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		DF7991322040C4FA00E4B0C8 /* StateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateType.swift; sourceTree = "<group>"; };
-		DF7991332040C4FA00E4B0C8 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		DF7991342040C4FA00E4B0C8 /* StoreSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSubscriber.swift; sourceTree = "<group>"; };
 		DF7991352040C4FA00E4B0C8 /* TaskRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRunner.swift; sourceTree = "<group>"; };
 		DF7991362040C4FA00E4B0C8 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		DF7991372040C4FA00E4B0C8 /* Async+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Async+Optional.swift"; sourceTree = "<group>"; };
 		DF79916F2040C93500E4B0C8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		DF7991722040CA6500E4B0C8 /* SyncMainSafe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncMainSafe.swift; sourceTree = "<group>"; };
+		DF7991732040CA6500E4B0C8 /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		DF7991742040CA6500E4B0C8 /* Async+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Async+Optional.swift"; sourceTree = "<group>"; };
+		DF7991752040CA6500E4B0C8 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 				DF7991342040C4FA00E4B0C8 /* StoreSubscriber.swift */,
 				DF79912E2040C4FA00E4B0C8 /* Task.swift */,
 				DF7991352040C4FA00E4B0C8 /* TaskRunner.swift */,
-				DF7991422040C50400E4B0C8 /* Utils */,
+				DF7991712040CA4500E4B0C8 /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -98,15 +98,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DF7991422040C50400E4B0C8 /* Utils */ = {
+		DF7991712040CA4500E4B0C8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				DF7991372040C4FA00E4B0C8 /* Async+Optional.swift */,
-				DF7991302040C4FA00E4B0C8 /* Lock.swift */,
-				DF79912F2040C4FA00E4B0C8 /* SyncMainSafe.swift */,
-				DF7991332040C4FA00E4B0C8 /* Weak.swift */,
+				DF7991742040CA6500E4B0C8 /* Async+Optional.swift */,
+				DF7991732040CA6500E4B0C8 /* Lock.swift */,
+				DF7991722040CA6500E4B0C8 /* SyncMainSafe.swift */,
+				DF7991752040CA6500E4B0C8 /* Weak.swift */,
 			);
-			path = Utils;
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,16 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7991412040C4FB00E4B0C8 /* Async+Optional.swift in Sources */,
 				DF79913F2040C4FB00E4B0C8 /* TaskRunner.swift in Sources */,
-				DF7991392040C4FB00E4B0C8 /* SyncMainSafe.swift in Sources */,
 				DF79913B2040C4FB00E4B0C8 /* Action.swift in Sources */,
+				DF7991782040CA6500E4B0C8 /* Async+Optional.swift in Sources */,
+				DF7991762040CA6500E4B0C8 /* SyncMainSafe.swift in Sources */,
 				DF7991402040C4FB00E4B0C8 /* Store.swift in Sources */,
 				DF79913E2040C4FB00E4B0C8 /* StoreSubscriber.swift in Sources */,
-				DF79913A2040C4FB00E4B0C8 /* Lock.swift in Sources */,
 				DF79913C2040C4FB00E4B0C8 /* StateType.swift in Sources */,
+				DF7991792040CA6500E4B0C8 /* Weak.swift in Sources */,
+				DF7991772040CA6500E4B0C8 /* Lock.swift in Sources */,
 				DF7991382040C4FB00E4B0C8 /* Task.swift in Sources */,
-				DF79913D2040C4FB00E4B0C8 /* Weak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
