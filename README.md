@@ -1,14 +1,14 @@
 # WARNING
 
-Thank you for using UnRedux. Before you release your awesome project to the world, complete the following steps.
+Thank you for using UnReswift. Before you release your awesome project to the world, complete the following steps.
 
 THIS LIST IS EASY, CHECK IT OFF ONE-BY-ONE BABY!
 
- - [ ] Open the project in Xcode and add features to UnRedux
+ - [ ] Open the project in Xcode and add features to UnReswift
  - [ ] Make sure you are using Swift 3 ("Convert to latest Swift syntax")
  - [ ] Fix all build errors and warnings, add tests (yes really)
  - [ ] Add a screenshot or AT LEAST some picture, and fill in this readme
- - [ ] Add all details to your [Podspec](UnRedux.podspec)
+ - [ ] Add all details to your [Podspec](UnReswift.podspec)
  - [ ] Delete all this crap up here
  - [ ] Make one release (full steps are in [CONTRIBUTING.md] in case you forget)
 
@@ -16,12 +16,12 @@ THEN YOU'RE DONE, GO STAR [swift3-module-template](https://github.com/fulldecent
 
 ----
 
-# UnRedux
+# UnReswift
 
-[![CI Status](http://img.shields.io/travis/jordanebelanger/UnRedux.svg?style=flat)](https://travis-ci.org/jordanebelanger/UnRedux)
-[![Version](https://img.shields.io/cocoapods/v/UnRedux.svg?style=flat)](https://cocoapods.org/pods/UnRedux)
-[![License](https://img.shields.io/cocoapods/l/UnRedux.svg?style=flat)](https://cocoapods.org/pods/UnRedux)
-[![Platform](https://img.shields.io/cocoapods/p/UnRedux.svg?style=flat)](https://cocoapods.org/pods/UnRedux)
+[![CI Status](http://img.shields.io/travis/jordanebelanger/UnReswift.svg?style=flat)](https://travis-ci.org/jordanebelanger/UnReswift)
+[![Version](https://img.shields.io/cocoapods/v/UnReswift.svg?style=flat)](https://cocoapods.org/pods/UnReswift)
+[![License](https://img.shields.io/cocoapods/l/UnReswift.svg?style=flat)](https://cocoapods.org/pods/UnReswift)
+[![Platform](https://img.shields.io/cocoapods/p/UnReswift.svg?style=flat)](https://cocoapods.org/pods/UnReswift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 <a href="https://placehold.it/400?text=Screen+shot"><img width=200 height=200 src="https://placehold.it/400?text=Screen+shot" alt="Screenshot" /></a>
@@ -45,12 +45,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 $ gem install cocoapods
 ```
 
-To integrate UnRedux into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate UnReswift into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 use_frameworks!
 
-pod 'UnRedux'
+pod 'UnReswift'
 ```
 
 Then, run the following command:
@@ -71,13 +71,13 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate UnRedux into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate UnReswift into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "jordanebelanger/UnRedux" ~> 0.1
+github "jordanebelanger/UnReswift" ~> 1.0
 ```
 
-Run `carthage update` to build the framework and drag the built `UnRedux`.framework into your Xcode project.
+Run `carthage update` to build the framework and drag the built `UnReswift`.framework into your Xcode project.
 
 
 ## Author
@@ -87,4 +87,4 @@ Jordane Belanger
 
 ## License
 
-UnRedux is available under the MIT license. See the LICENSE file for more info.
+UnReswift is available under the MIT license. See the LICENSE file for more info.

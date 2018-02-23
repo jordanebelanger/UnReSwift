@@ -1,6 +1,6 @@
 //
 //  DispatchQueue+Optional.swift
-//  UnRedux
+//  UnReswift
 //
 //  Created by jordanebelanger on 2/22/18.
 //  Copyright © 2018 Jordane Belanger. All rights reserved.

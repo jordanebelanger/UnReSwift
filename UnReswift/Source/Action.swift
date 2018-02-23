@@ -1,6 +1,6 @@
 //
 //  Action.swift
-//  UnRedux
+//  UnReswift
 //
 //  Created by jordanebelanger on 1/16/18.
 //  Copyright © 2018 Jordane Belanger. All rights reserved.

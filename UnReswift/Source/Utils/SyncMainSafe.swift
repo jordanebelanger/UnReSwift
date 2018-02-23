@@ -1,6 +1,6 @@
 //
 //  SyncMainSafe.swift
-//  UnRedux
+//  UnReswift
 //
 //  Created by jordanebelanger on 1/31/18.
 //  Copyright © 2018 Jordane Belanger. All rights reserved.
