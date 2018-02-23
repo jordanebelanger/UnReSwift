@@ -2,7 +2,9 @@
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Redux style reducers, as are used in the ReSwift library and others, are a mostly useless artifact emanating from Javascript's lack of static typing. Programming elements consisting of a large switch statement applied to a bunch of constant strings are not necessary in a static language like Swift. From my experience, Reducers look and sound cool in theory, they have that Functional Programming buzz around them, but in practice it's usually just an additional element of indirection cluttering your project.
+Redux style reducers, as are used in the ReSwift library and others, are a mostly useless artifact emanating from Javascript's lack of static typing. Programming elements consisting of a large switch statement applied to a bunch of constant strings are not necessary in a static language like Swift.
+
+From my experience, Reducers look and sound cool in theory, they have that Functional Programming buzz around them, but in practice it's usually just an additional element of indirection cluttering your project.
 
 While keeping the familiar Store/Dispatch based interface, UnReswift removes reducers altogether and move the act of reducing your `Store`'s state to the `Action`s themselves.
 
