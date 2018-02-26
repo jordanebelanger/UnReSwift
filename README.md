@@ -1,8 +1,8 @@
-# UnReswift
+# UnReSwift
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-While keeping the familiar Store/Dispatch based interface, UnReswift removes reducers altogether and move the act of reducing your Store state to the Action's themselves. No more big Switch statements...
+While keeping the familiar Store/Dispatch based interface, UnReSwift removes reducers altogether and move the act of reducing your Store state to the Action's themselves. No more big Switch statements...
 
 The `Action` Protocol is very simple:
 
@@ -14,7 +14,7 @@ public protocol Action: AnyAction {
 }
 ```
 
-Notice the `reduce` function requirement. Traditionally, the store state modification routine happens inside a switch case of one of your reducers. In UnReswift, that routine is the `reduce` function of an `Action` itself.
+Notice the `reduce` function requirement. Traditionally, the store state modification routine happens inside a switch case of one of your reducers. In UnReSwift, that routine is the `reduce` function of an `Action` itself.
 
 Here is an example applied to the common counter problem:
 
